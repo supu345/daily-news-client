@@ -2,15 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Breadcrumb = ({ one, two }) => {
   return (
-    <div class="flex" aria-label="Breadcrumb">
-      <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
-        <li class="inline-flex items-center">
+    <div className="flex" aria-label="Breadcrumb">
+      <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+        <li className="inline-flex items-center">
           <Link
             to="/"
-            class="inline-flex items-center text-xl font-medium text-black hover:text-red-600 "
+            className="inline-flex items-center text-xl font-medium text-black hover:text-red-600 "
           >
             <svg
-              class="w-3 h-3 me-2.5"
+              className="w-3 h-3 me-2.5"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -22,7 +22,7 @@ const Breadcrumb = ({ one, two }) => {
           </Link>
         </li>
         <li>
-          <div class="flex items-center">
+          <div className="flex items-center">
             <svg
               class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
               aria-hidden="true"
@@ -40,16 +40,16 @@ const Breadcrumb = ({ one, two }) => {
             </svg>
             <span
               to="#"
-              class="ms-1 text-sm text-xl font-medium text-black hover:text-red-600"
+              className="ms-1 text-xl font-medium text-black hover:text-red-600"
             >
               {one}
             </span>
           </div>
         </li>
         <li aria-current="page">
-          <div class="flex items-center">
+          <div className="flex items-center">
             <svg
-              class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
+              className="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -63,7 +63,7 @@ const Breadcrumb = ({ one, two }) => {
                 d="m1 9 4-4-4-4"
               />
             </svg>
-            <span class="ms-1 text-xl font-medium text-gray-500 md:ms-2">
+            <span className="ms-1 text-xl font-medium text-gray-500 md:ms-2">
               {two}
             </span>
           </div>
