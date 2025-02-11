@@ -19,10 +19,12 @@ const Home = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const res = await fetch(`${base_api_url}/api/latest/news`);
+        const res = await fetch(`${base_api_url}/api/latest/news`, {
+          credentials: "include",
+        });
         const { news } = await res.json();
         setNews(news);
-        // console.log("Fetched news:", news);
+        console.log("Fetched news:", news);
       } catch (error) {
         console.error("Error fetching news:", error);
       } finally {
@@ -37,7 +39,12 @@ const Home = () => {
   useEffect(() => {
     const fetchNewsCate = async () => {
       try {
-        const res = await fetch(`${base_api_url}/api/all/news`);
+        const res = await fetch(`${base_api_url}/api/all/news`, {
+          credentials: "include",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
         const data = await res.json();
         console.log("Fetched data:", data);
         setNewsCate(data.news || {}); // Ensure it's an object

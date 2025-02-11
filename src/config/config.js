@@ -6,12 +6,12 @@ const production_api_url = "https://blog-app03-api.onrender.com";
 
 const mode = local;
 
-let base_api_url = "";
+let base_api_url = "https://blog-app03-api.onrender.com";
 
-if (mode === production) {
-  base_api_url = production_api_url;
-} else {
-  base_api_url = local_api_url;
-}
+// if (mode === production) {
+//   base_api_url = production_api_url;
+// } else {
+//   base_api_url = local_api_url;
+// }
 
 export { base_api_url };

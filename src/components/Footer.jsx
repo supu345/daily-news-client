@@ -1,8 +1,3 @@
-import React, { useState } from "react";
-import moment from "moment";
-import { TiWeatherPartlySunny } from "react-icons/ti";
-import { MdMenu, MdClose } from "react-icons/md";
-import { MdExpandMore, MdExpandLess } from "react-icons/md";
 import { GiNewspaper } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { FaArrowUp } from "react-icons/fa";

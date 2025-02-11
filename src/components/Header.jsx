@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import moment from "moment";
 import { TiWeatherPartlySunny } from "react-icons/ti";
 import { MdMenu, MdClose } from "react-icons/md";
-import { MdExpandMore, MdExpandLess } from "react-icons/md";
 import { GiNewspaper } from "react-icons/gi";
 import { Link, useNavigate } from "react-router-dom";
-import { AiOutlineSearch, AiOutlineDown } from "react-icons/ai";
-import { IoClose } from "react-icons/io5";
 import { base_api_url } from "../config/config";
 
 const Header = () => {
@@ -14,7 +11,7 @@ const Header = () => {
   const [isNewsOpen, setIsNewsOpen] = useState(false);
 
   const [show, setShow] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(null);
+
   const [categories, setCategories] = useState([]); // Re-enable this state
   const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();

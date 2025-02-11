@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { base_api_url } from "../config/config";
 import { Link } from "react-router-dom";
 
 const PopularNews = () => {
   const [news, setNews] = useState([]);
-
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const fetchNews = async () => {
       try {
@@ -29,15 +29,22 @@ const PopularNews = () => {
         <div className="flex flex-col w-full gap-y-[14px]">
           <p className="pl-4 text-2xl font-bold">Popular news</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-4 sm:gap-3 lg:gap-x-4">
-            {news.length > 0 ? (
+            {loading ? (
+              <p>Loading popular news...</p>
+            ) : news.length > 0 ? (
               news.map((item) => (
                 <div key={item._id}>
                   <img
                     src={item.image}
                     alt="img"
-                    className="h-[200px] w-full opject-cover"
+                    className="h-[200px] w-full object-cover"
                   />
-                  <p className="text-xl mt-2 font-semibold">{item.title}</p>
+                  <Link
+                    href={`/news/category/${item?.category}`}
+                    className="text-xl mt-2 font-semibold text-[#c80000]"
+                  >
+                    {item?.category}
+                  </Link>
                 </div>
               ))
             ) : (

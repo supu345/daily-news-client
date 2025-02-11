@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Breadcrumb from "../components/Breadcrumb";
 import { useParams } from "react-router-dom";
 import { base_api_url } from "../config/config";

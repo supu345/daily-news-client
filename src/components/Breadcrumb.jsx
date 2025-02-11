@@ -1,5 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types"; // Import PropTypes for validation
 import { Link } from "react-router-dom";
+
 const Breadcrumb = ({ one, two }) => {
   return (
     <div className="flex" aria-label="Breadcrumb">
@@ -7,7 +9,7 @@ const Breadcrumb = ({ one, two }) => {
         <li className="inline-flex items-center">
           <Link
             to="/"
-            className="inline-flex items-center text-xl font-medium text-black hover:text-red-600 "
+            className="inline-flex items-center text-xl font-medium text-black hover:text-red-600"
           >
             <svg
               className="w-3 h-3 me-2.5"
@@ -24,7 +26,7 @@ const Breadcrumb = ({ one, two }) => {
         <li>
           <div className="flex items-center">
             <svg
-              class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
+              className="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -32,16 +34,13 @@ const Breadcrumb = ({ one, two }) => {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="m1 9 4-4-4-4"
               />
             </svg>
-            <span
-              to="#"
-              className="ms-1 text-xl font-medium text-black hover:text-red-600"
-            >
+            <span className="ms-1 text-xl font-medium text-black hover:text-red-600">
               {one}
             </span>
           </div>
@@ -57,9 +56,9 @@ const Breadcrumb = ({ one, two }) => {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="m1 9 4-4-4-4"
               />
             </svg>
@@ -71,6 +70,12 @@ const Breadcrumb = ({ one, two }) => {
       </ol>
     </div>
   );
+};
+
+// Define PropTypes for validation
+Breadcrumb.propTypes = {
+  one: PropTypes.string.isRequired,
+  two: PropTypes.string.isRequired,
 };
 
 export default Breadcrumb;
