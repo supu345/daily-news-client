@@ -81,7 +81,12 @@ const CategoryNewsPage = () => {
                     alt={item.title}
                     className="h-[200px] w-full object-cover"
                   />
-                  <p className="text-2xl mt-2 font-semibold">{item.title}</p>
+                  <Link to={`/news/${item.slug}`}>
+                    <p className="text-2xl mt-2 font-semibold cursor-pointer hover:text-green-600">
+                      {item.title}
+                    </p>
+                  </Link>
+
                   <p className="text-gray-700 mt-2">
                     {parse(item.description.slice(0, 100))}
                   </p>

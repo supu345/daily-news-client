@@ -8,6 +8,7 @@ import { PiGlobeLight } from "react-icons/pi";
 import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaXTwitter } from "react-icons/fa6";
+import HeadLines from "../components/HeadLines";
 const Home = () => {
   const [activeTab, setActiveTab] = useState("mostPopular");
   const [news, setNews] = useState([]);
@@ -92,6 +93,9 @@ const Home = () => {
 
   return (
     <div className="mt-[20px] ml-4 mr-2 px-3">
+      <div>
+        <HeadLines news={news} />
+      </div>
       <div className="flex flex-col md:flex-row gap-4 mb-4">
         {/* Left Section */}
         <div className="w-full md:w-4/6">

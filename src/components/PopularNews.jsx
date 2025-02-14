@@ -39,11 +39,11 @@ const PopularNews = () => {
                     alt="img"
                     className="h-[200px] w-full object-cover"
                   />
-                  <Link
-                    href={`/news/category/${item?.category}`}
-                    className="text-xl mt-2 font-semibold text-[#c80000]"
-                  >
-                    {item?.category}
+
+                  <Link to={`/news/${item.slug}`}>
+                    <p className="text-2xl mt-2 font-semibold cursor-pointer hover:text-green-600">
+                      {item.title}
+                    </p>
                   </Link>
                 </div>
               ))
