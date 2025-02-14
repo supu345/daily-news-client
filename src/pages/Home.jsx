@@ -337,7 +337,7 @@ const Home = () => {
             <div className="border-t border-slate-500 "></div>
             <div className="border-t border-2 border-slate-500 mt-1 "></div>
           </div>
-          <div className="px-4 text-8xl font-semibold opacity-10 absolute ml-[590px] text-slate-400">
+          <div className="px-4 text-8xl font-semibold opacity-10 absolute ml-[490px] text-slate-400">
             Opinion
           </div>
           <div className="px-[120px] text-5xl font-semibold text-orange-500 ">
@@ -585,7 +585,7 @@ const Home = () => {
             <div className="border-t border-slate-500 "></div>
             <div className="border-t border-2 border-slate-500 mt-1 "></div>
           </div>
-          <div className="px-4 text-8xl font-semibold opacity-10 absolute ml-[620px] text-slate-400">
+          <div className="px-4 text-8xl font-semibold opacity-10 absolute ml-[490px] text-slate-400">
             Sports
           </div>
           <div className="px-[120px] text-5xl font-semibold text-black ">
@@ -701,7 +701,7 @@ const Home = () => {
             <div className="border-t border-slate-500 "></div>
             <div className="border-t border-2 border-slate-500 mt-1 "></div>
           </div>
-          <div className="px-4 text-7xl font-semibold opacity-10 absolute ml-[630px] text-slate-400">
+          <div className="px-4 text-7xl font-semibold opacity-10 absolute ml-[490px] text-slate-400">
             News
           </div>
           <div className="px-[150px] text-5xl font-semibold text-black ">
@@ -853,7 +853,7 @@ const Home = () => {
             <div className="border-t border-slate-500 "></div>
             <div className="border-t border-2 border-slate-500 mt-1 "></div>
           </div>
-          <div className="px-4 text-7xl font-semibold opacity-10 absolute ml-[550px] text-slate-500">
+          <div className="px-4 text-7xl font-semibold opacity-10 absolute ml-[490px] text-slate-500">
             Entertaintment
           </div>
           <div className="px-[120px] text-5xl font-semibold text-black ">
